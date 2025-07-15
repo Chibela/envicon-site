@@ -1,0 +1,323 @@
+/* Add CSS styles for your web site here and use them in index.html. */
+body {
+  padding-top: 80px; /* adjust based on your header height */
+}
+
+html {
+  scroll-padding-top: 70px; /* This will avoid the header from obstructing the info below it */
+}
+
+.responsive-header {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-between; 
+    padding: 1rem 2rem;
+    background-color: #0A2E38;
+    color: white;
+    cursor: pointer;
+    position:fixed;
+    top: 10px;
+    left: 0; /* left and the right will make sure it does not mis align or shrink*/
+    right: 0;
+    z-index: 999; /* this will ensure it is kept above other elements */
+  }
+
+.header-main {
+    background: #e1e4e0;
+    /* background: #F8FFE5; */
+    /* background: linear-gradient(
+  to top,
+  #015E01 0%,           
+  #007F00 30%,        
+  rgba(0, 128, 0, 0.5) 100%,  
+  rgba(0, 128, 0, 0.1) 200%); */
+    height: 100%;
+    margin: 5px 10px 5px 10px;
+    padding: 1px;
+    border: 3px;
+    padding-top: 80px
+    
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 45px;
+    margin: 0;
+    padding: 10px 5%;
+
+}
+#header1{
+    text-align:left;
+    margin: 0px;
+    font-family: monospace;
+    font-size: larger;
+}
+
+
+.header-button{
+    background: linear-gradient(to bottom,rgb(209, 199, 199), skyblue,green);
+    font-weight: bold;
+    cursor:pointer;
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px;
+    font-size: 16px;
+    gap: 10px;
+}
+
+.Welcome_page{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 40px;
+    margin: 25px;
+
+}
+
+.about--eventChild{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 40px;
+
+}
+.about__event{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#past_events{
+    margin: 25px;
+
+}
+p{
+    border: 2px;
+    text-align: justify;
+    /* text-size-adjust: 12px; */
+}
+#envicon{
+    color: rgb(243, 2, 2);
+    padding: 2px 0px;
+    font-weight: none;
+    text-align: center;
+
+}
+
+#temp{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    justify-content: center;
+}
+
+#pics{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 40px;
+    margin-top: auto;
+    padding: 20px;
+}
+#pics img{
+    border-radius: 15px;
+}
+#temp img{
+    border-radius: 15px;
+    box-shadow: 0 0 30px 15px rgba(0,100,0,0.1);
+    -webkit-mask-image: radial-gradient(ellipse, white 70%, transparent 95%);
+}
+
+.flex{
+    display:flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+#mode-toggle{
+    background-color: rgba(255, 255, 255, 0.493);
+    padding: 4px;
+    border: none;
+    border-radius: 5px;
+}
+
+  .menu-toggle{
+    cursor: pointer;
+  }
+a:link{
+    color:white;
+}
+a:visited{
+    color: rgb(247, 174, 247);
+}
+a:hover{
+    color:green;
+}
+a:active{
+    color: red;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: flex-start; 
+    padding: 1rem 2rem;
+    background-color: #06242c;
+    color: white;
+    cursor: pointer;
+}
+#day{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* text-align: center; */
+    background: rgba(255, 255, 255, 0.555); /* White with transparency */
+    padding: 20px;
+    border-radius: 10px; /* Smooth corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Light shadow effect */
+    max-width: 300px;
+    margin: 10px;
+}
+.Event{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.just{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
+    gap: 15px;
+
+}
+label{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.form input{
+    border-width: 0.5px;
+    border-color: #000;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.74);
+    padding: 2.5px;
+}
+
+#sub{
+    border-width: 0.5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.74);
+    padding: 2.5px;
+    cursor: pointer;
+}
+
+body.light-mode {
+    background-color: #fffdfd;
+    /* background: linear-gradient(
+        to top,
+        #015E01 30%,           
+        #007F00 50%,        
+        rgba(0, 128, 0, 0.5) 70%,  
+        rgba(0, 128, 0, 0.1) 110%); */
+    color: #000;
+}
+
+body.light-mode .responsive-header,
+body.light-mode .footer {
+    /* background-color: #b1a5a5; */
+    background-color: rgb(56, 165, 65);
+    color: #000;
+}
+
+body.light-mode .nav-links a:link {
+    color: #000;
+}
+body.light-mode .nav-links a:visited {
+    color: #333;
+}
+body.light-mode .nav-links a:hover {
+    color: darkgreen;
+}
+body.light-mode .nav-links a:active {
+    color: darkred;
+}
+
+body.light-mode #day {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+body.light-mode .header-button {
+    background: linear-gradient(to bottom, #c9c7c796, #b8d9f1, #4bb94b);
+    color: #000;
+}
+
+body.light-mode .footer a{
+    color:#000;
+}
+
+.rsvp-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.rsvp-para{
+    margin: 25px;
+    width: 55%;
+    padding-right: 10px;
+}
+
+.rsvp-participants{
+    width: 45%;
+    padding-right: 10px;
+}
+
+/* This below helps with how fluidity of the website depending on the screen  */
+@media screen and (max-width: 768px) {
+  .Welcome_page, #temp, #pics, .Event, .rsvp-container, .just, .form, .about--eventChild{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+}
+
+/* Another Media Query to handle the header: Logo and heading title */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  #header1 {
+    text-align: center;
+    font-size: small; 
+  }
+
+  .header-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .header img {
+    max-width: 80px;
+    height: auto;
+  }
+}
+

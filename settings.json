@@ -1,0 +1,30 @@
+{
+  // Format code on save
+  "editor.formatOnSave": true,
+
+  // Set Prettier as default formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Live Server settings
+  "liveServer.settings.wait": 500, // Delay before auto-reloading
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  // Emmet support in JavaScript files (for JSX or HTML in JS)
+  "emmet.includeLanguages": {
+    "javascript": "html",
+    "javascriptreact": "html"
+  },
+
+  // Auto-save files (optional)
+  "files.autoSave": "onFocusChange",
+
+  // Trim trailing spaces
+  "files.trimTrailingWhitespace": true,
+
+  // Set file associations (optional)
+  "files.associations": {
+    "*.html": "html",
+    "*.css": "css",
+    "*.js": "javascript"
+  }
+}
